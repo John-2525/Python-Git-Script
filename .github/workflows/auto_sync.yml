@@ -9,9 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetching Latest Commit And Syncing To Second Repository
       - uses: actions/checkout@v3
-      - run: |
+      - name: Syncing to Second Repository
+        run: |
           git remote add SecondaryRepo https://github.com/John-2525/Test-Recipient
           git push origin master
           git remove SecondaryRepo
