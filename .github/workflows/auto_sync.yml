@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: |
           git remote add SecondaryRepo https://github.com/John-2525/Test-Recipient.git
-          git push origin master
+          git commit -m "Generated"
           git remote remove SecondaryRepo
           
         
