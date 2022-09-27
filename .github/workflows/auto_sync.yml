@@ -1,0 +1,14 @@
+# This Workflow is to auto sync current repository to a secondary repository
+
+name: Auto Sync To Second Repo
+run-name: Syncing @${{ github.actor }}'s changes to second repository
+on: [push]
+
+jobs:
+  checkout_main_repo:
+    name: Checkout Main Repository
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
