@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Syncing to Second Repository
-        run: |
+      - run: |
           git remote add SecondaryRepo https://github.com/John-2525/Test-Recipient
           git push origin master
           git remote remove SecondaryRepo
