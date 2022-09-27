@@ -1,14 +1,21 @@
-# This Workflow is to auto sync current repository to a secondary repository
+# This Workflow is to auto sync current repository commits to a secondary repository
 
 name: Auto Sync To Second Repo
 run-name: Syncing @${{ github.actor }}'s changes to second repository
 on: [push]
+# Job to scan and fetch the latest commit whenever main repo is pushed
 
 jobs:
-  checkout_main_repo:
-    name: Checkout Main Repository
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
+      - name: Fetching Latest Commit
+      - uses: actions/checkout@v3
+      
+      - name: Sync To Second Repository
+      - run: |
+          git remote add SecondaryRepo https://github.com/John-2525/Test-Recipient
+          git push origin master
+          git remove SecondaryRepo
+          
+        
