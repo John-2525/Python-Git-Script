@@ -1,6 +1,1 @@
-print("Test")
-print("Hello")
-print("Help")
-print("Me")
-print("Please")
-print("memes")
+print("Test, memes");
