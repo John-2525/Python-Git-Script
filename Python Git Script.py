@@ -1,1 +1,1 @@
-print("Test, memes");
+print("Test, memes, ko");
