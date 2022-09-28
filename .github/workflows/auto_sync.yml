@@ -3,7 +3,7 @@
 name: Auto Sync To Second Repo
 run-name: Syncing @${{ github.actor }}'s changes to second repository
 on:
-  [push]:
+  push:
     paths-ignore:
       - '.github/workflows/**'
     
