@@ -15,14 +15,12 @@ jobs:
   SyncCommitToSecondRepo:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Get latest commit'
+      - name: 'Check main repo'
         uses: actions/checkout@v3
         with:
           path: 'src'
-        
-      - name: 'Get Second Repo'
-        uses: actions/checkout@v3
-        with:
-          path: 'main'
-          
-        
+      
+      - name: 'Add second repo'
+        run: git remote add secondOrigin https://github.com/John-2525/Test-Recipient.git
+    
+      #- name: '
