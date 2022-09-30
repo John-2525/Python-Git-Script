@@ -24,4 +24,6 @@ jobs:
           git config --global user.email 'John@no.reply.github.com'
           git status
           git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git
-          git remote status
+
+      - name: 'Merge Second with Main repo'
+        run: git remote pull secondOrigin master
