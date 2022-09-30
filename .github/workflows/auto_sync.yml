@@ -1,6 +1,6 @@
 # This Workflow is to auto sync current repository commits to a secondary repository
 
-name: Auto Sync To Second Repo
+name: Auto Sync Changes To Second Repo
 run-name: Syncing @${{ github.actor }}'s changes to second repository
 on:
   push:
