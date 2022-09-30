@@ -6,6 +6,8 @@ on:
   push:
     branches:
       [master]
+      
+  pull_request:
 
 jobs:
   SyncCommitToSecondRepo:
@@ -18,8 +20,8 @@ jobs:
       
       - name: 'Add second repo'
         run: |
-          git config --global.user.name 'John'
-          git config --global.user.email 'John@no.reply.github.com'
+          git config --global user.name 'John'
+          git config --global user.email 'John@no.reply.github.com'
           git remote add secondOrigin https://github.com/John-2525/Test-Recipient.git
 
       - name: 'Pushing changes to second repo'
