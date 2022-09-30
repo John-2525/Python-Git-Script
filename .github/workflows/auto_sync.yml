@@ -23,7 +23,7 @@ jobs:
           git config --global user.name 'John'
           git config --global user.email 'John@no.reply.github.com'
           git status
-          git remote add secondOrigin https://github.com/John-2525/Secondary_Repo
+          git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git
           git status secondOrigin
 
       - name: 'Pushing changes to second repo'
