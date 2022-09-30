@@ -16,12 +16,13 @@ jobs:
       - name: 'Check main repo'
         uses: actions/checkout@v3
         with:
-          path: 'src'
+          fetch-depth: '0'
       
       - name: 'Add second repo'
         run: |
           git config --global user.name 'John'
           git config --global user.email 'John@no.reply.github.com'
+          git status
           git remote add secondOrigin https://github.com/John-2525/Test-Recipient
 
       - name: 'Pushing changes to second repo'
