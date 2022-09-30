@@ -18,12 +18,13 @@ jobs:
         with:
           fetch-depth: '0'
       
-      - name: 'Add second repo'
+      - name: 'Config'
         run: |
           git config --global user.name 'John'
           git config --global user.email 'John@no.reply.github.com'
           git status
-          git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git
 
-      - name: 'Merge Second with Main repo'
-        run: git remote pull secondOrigin master
+      - name: 'Adding Second repo'
+        run: |
+          git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git
+          git remote -v
