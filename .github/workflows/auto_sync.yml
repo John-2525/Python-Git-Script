@@ -18,7 +18,7 @@ jobs:
         with:
           fetch-depth: '0'
       
-      - name: 'Config'
+      - name: 'Configuration'
         run: |
           git config --global user.name 'John'
           git config --global user.email 'John@no.reply.github.com'
@@ -27,4 +27,4 @@ jobs:
       - name: 'Adding Second repo'
         run: |
           git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git
-          git checkout secondOrigin
+          git remote --verbose
