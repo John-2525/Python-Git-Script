@@ -23,8 +23,11 @@ jobs:
           git config --global user.name 'John'
           git config --global user.email 'John@no.reply.github.com'
           git status
+          git add .
+          git commit -m "Test"
 
       - name: 'Adding Second repo'
         run: |
-          git remote set-url --add --push secondOrigin https://github.com/John-2525/Secondary_Repo.git
+          git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git --dry-run
+          git 
           git push secondOrigin master
