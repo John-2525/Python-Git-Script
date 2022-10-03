@@ -22,10 +22,10 @@ jobs:
         run: |
           git config --global user.name 'John'
           git config --global user.email 'John@no.reply.github.com'
-          git status
+          git status -v
 
       - name: 'Adding Second repo'
         run: |
           git remote -v add secondOrigin https://github.com/John-2525/Secondary_Repo.git
           git fetch -v secondOrigin
-          git merge -v master
+          git merge -v main
