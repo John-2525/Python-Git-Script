@@ -34,5 +34,5 @@ jobs:
         run: |
           git checkout remotes/origin/master
           git status
-          git push remotes/origin/master HEAD: origin/master
-
+          git add .
+          git commit -a -m "Testing"
