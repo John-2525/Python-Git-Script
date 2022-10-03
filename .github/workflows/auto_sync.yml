@@ -27,6 +27,4 @@ jobs:
       - name: 'Adding Second repo'
         run: |
           git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git
-          git checkout secondOrigin
-          git fetch main
-          git merge main
+          git checkout secondOrigin --verbose
