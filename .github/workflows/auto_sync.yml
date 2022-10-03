@@ -22,7 +22,7 @@ jobs:
         run: |
           git config --global user.name 'John'
           git config --global user.email 'John@no.reply.github.com'
-          git status -v
+          git status --verbose
 
       - name: 'Adding Second repo'
         run: |
