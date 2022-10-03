@@ -4,10 +4,10 @@ name: Auto Sync Changes To Second Repo
 run-name: Syncing @${{ github.actor }}'s changes to second repository
 on:
   push:
-    branches:
-      [master]
+    branches: master
       
   pull_request:
+    branches: master
 
 jobs:
   SyncCommitToSecondRepo:
@@ -34,3 +34,4 @@ jobs:
         run: |
           git checkout remotes/origin/master
           git merge master
+          git push -u remotes/origin/master
