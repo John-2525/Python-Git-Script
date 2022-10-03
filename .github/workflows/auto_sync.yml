@@ -26,6 +26,5 @@ jobs:
 
       - name: 'Adding Second repo'
         run: |
-          git remote set-url secondOrigin https://github.com/John-2525/Secondary_Repo.git
-          git remote -v
+          git remote set-url --add secondOrigin https://github.com/John-2525/Secondary_Repo.git --dry-run
           git push secondOrigin master
