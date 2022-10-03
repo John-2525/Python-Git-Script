@@ -34,4 +34,4 @@ jobs:
         run: |
           git checkout remotes/origin/master
           git merge master
-          git push -u remotes/origin/master
+          git push remotes/origin/master HEAD:master
