@@ -34,4 +34,5 @@ jobs:
         run: |
           git checkout remotes/origin/master
           git status
-          git push origin HEAD: origin/master
+          git push remotes/origin/master HEAD: origin/master
+
