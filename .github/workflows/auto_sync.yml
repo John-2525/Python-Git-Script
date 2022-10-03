@@ -28,4 +28,4 @@ jobs:
         run: |
           git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git
           git remote --verbose
-          git checkout secondOrigin
+          git checkout secondOrigin/main
