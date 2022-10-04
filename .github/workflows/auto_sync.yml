@@ -26,13 +26,13 @@ jobs:
 
       - name: 'Adding Second repo'
         run: |
-          git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git
+          git remote set-url origin --push --add https://github.com/John-2525/Secondary_Repo.git
           git remote --verbose
           git branch -a
 
-      - name: 'Syncing with second repo'
-        run: |
-          git checkout remotes/origin/master
-          git add .
-          git commit -m "Test"
-          git push -u --verbose secondOrigin master
+      #- name: 'Syncing with second repo'
+       # run: |
+        #  git checkout remotes/origin/master
+         # git add .
+          #git commit -m "Test"
+          #git push -u --verbose secondOrigin master
