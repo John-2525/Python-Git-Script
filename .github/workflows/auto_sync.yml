@@ -28,7 +28,7 @@ jobs:
         run: |
           git remote set-url origin --push --add https://github.com/John-2525/Secondary_Repo.git
           git remote --verbose
-          git push -a
+          git push --all
 
       #- name: 'Syncing with second repo'
        # run: |
