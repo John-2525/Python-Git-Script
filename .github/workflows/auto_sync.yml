@@ -33,4 +33,4 @@ jobs:
       - name: 'Syncing with second repo'
         run: |
           git checkout remotes/origin/master
-          git push --verbose origin remotes/origin/master
+          git push -u --verbose secondOrigin main
