@@ -35,4 +35,4 @@ jobs:
           git checkout remotes/origin/master
           git add .
           git commit -m "Test"
-          git push -u --verbose secondOrigin main
+          git push -u --verbose secondOrigin master
