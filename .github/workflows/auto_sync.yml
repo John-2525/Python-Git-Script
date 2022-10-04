@@ -33,6 +33,4 @@ jobs:
       - name: 'Syncing with second repo'
         run: |
           git checkout remotes/origin/master
-          git status
-          git add .
-          git commit -a -m "Testing"
+          git push -a
