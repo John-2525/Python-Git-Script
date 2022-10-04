@@ -27,9 +27,10 @@ jobs:
       - name: 'Adding Second repo'
         run: |
           git remote add secondOrigin https://github.com/John-2525/Secondary_Repo.git
-          git remote set-url secondOrigin --push --add https://github.com/John-2525/Secondary_Repo.git
-          git config -l | grep '^remote\.all'
           git remote --verbose
+          git remote set-url secondOrigin --push --add https://github.com/John-2525/Secondary_Repo.git
+          git remote --verbose
+          git config -l | grep '^remote\.all'
 
       #- name: 'Syncing with second repo'
        # run: |
