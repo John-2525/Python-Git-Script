@@ -33,4 +33,4 @@ jobs:
       - name: 'Syncing with second repo'
         run: |
           git checkout remotes/origin/master
-          git push -v --dry-run
+          git git push origin HEAD: remote/origin/master
