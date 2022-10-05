@@ -5,6 +5,7 @@ run-name: Syncing @${{ github.actor }}'s changes to second repository
 on:
   push:
     branches: master
+    paths-ignore: '.github/workflow/**'
       
   pull_request:
     branches: master
